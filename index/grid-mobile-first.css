@@ -1,0 +1,116 @@
+/* 
+  
+Mobile First
+
+*/
+
+.container {
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+
+.row {
+  margin-left: -30px;
+  margin-right: -30px;
+  font-size: 0;
+  /* border: 1px solid green; */
+}
+
+
+[class*="col-"] {
+  display: inline-block;
+  padding-left: 30px;
+  padding-right: 30px;
+  vertical-align: top;
+  /* border: 1px solid blue; */
+}
+
+.col-mobile-3 {
+  width: 100%;
+}
+
+.col-mobile-2 {
+  width: 66%;
+}
+
+.col-mobile-1 {
+  width: 33%;
+}
+
+
+/* 
+  tablet 
+
+  от 480px
+*/
+
+@media (min-width: 480px) {
+
+  .col-tablet-3 {
+    width: 100%;
+  }
+  
+  .col-tablet-2 {
+    width: 66%;
+  }
+  
+  .col-tablet-1 {
+    width: 33%;
+  }
+}
+
+
+/* 
+  notebook
+
+  от 768px 
+ */
+@media (min-width: 768px) {
+  
+  .col-notebook-3 {
+    width: 100%;
+  }
+  
+  .col-notebook-2 {
+    width: 66%;
+  }
+  
+  .col-notebook-1 {
+    width: 33%;
+  }
+
+  .about .row{
+    transform: scaleX(-1);
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+/* 
+  desktop
+
+  от 1120px 
+   
+*/
+@media (min-width: 1120px) {
+  .container {
+    width: 1120px;
+  }  
+  
+  .col-desktop-3 {
+    width: 100%;
+  }
+  
+  .col-desktop-2 {
+    width: 66%;
+  }
+  
+  .col-desktop-1 {
+    width: 33%;
+  }
+}
+
+
